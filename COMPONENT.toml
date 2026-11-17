@@ -3,7 +3,7 @@ name = "SigmaOS-drag-drop"
 tier = 2
 stability = "scaffold"
 language = "rust"
-description = "drag-drop component"
+description = "drag drop"
 upstream = []
 
 [contract]
