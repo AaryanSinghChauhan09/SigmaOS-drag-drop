@@ -1,18 +1,18 @@
-# SigmaOS-SigmaOS-drag-drop Component Wiki
+# SigmaOS-drag-drop Component Wiki
 
 ## Overview
-SigmaOS-SigmaOS-drag-drop provides drag drop for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
+SigmaOS-drag-drop provides component for the SigmaOS operating system. It demonstrates the subsystem and integration within the SigmaOS ecosystem, following the principles of clear abstraction and deterministic initialization.
 
 ## Principles
-- Single Responsibility
-- SigmaOS-drag-drop Abstraction
-- Fail-Fast on SigmaOS-drag-drop Initialization Errors
-- Deterministic SigmaOS-drag-drop Setup
-- Clear Abstraction Over SigmaOS-drag-drop APIs
-- Composition over Inheritance for SigmaOS-drag-drop extensions
+- **Single Responsibility**: Each component has a single well-defined purpose
+- **SigmaOS-drag-drop Abstraction**: Clear abstraction over the component's APIs and functionality
+- **Fail-Fast on SigmaOS-drag-drop Initialization Errors**: Fail-fast principle for initialization errors
+- **Deterministic SigmaOS-drag-drop Setup**: Deterministic initialization and configuration
+- **Clear Abstraction Over SigmaOS-drag-drop APIs**: Well-defined, clear APIs
+- **Composition over Inheritance for SigmaOS-drag-drop extensions**: Use composition patterns for extensions
 
 ## Architecture
-SigmaOS-SigmaOS-drag-drop follows a SigmaOS-drag-drop pattern:
+SigmaOS-drag-drop follows a SigmaOS-drag-drop pattern:
 - **SigmaOS-drag-drop Core**: Provides SigmaOS-drag-drop support, SigmaOS-drag-drop management, and SigmaOS-drag-drop tracking
 - **Management**: Supports SigmaOS-drag-drop management, SigmaOS-drag-drop configuration, and SigmaOS-drag-drop lifecycle
 - **Tracking**: Supports SigmaOS-drag-drop status, SigmaOS-drag-drop tracking, and SigmaOS-drag-drop lifecycle
@@ -20,10 +20,10 @@ SigmaOS-SigmaOS-drag-drop follows a SigmaOS-drag-drop pattern:
 
 ## API
 The component provides the following public APIs:
--  - Manage a SigmaOS-drag-drop by given configuration
--  - Register a SigmaOS-drag-drop by given name
--  - Get SigmaOS-drag-drop status and SigmaOS-drag-drop availability
--  - Track SigmaOS-drag-drop management and SigmaOS-drag-drop tracking
+- Manage a SigmaOS-drag-drop by given configuration
+- Register a SigmaOS-drag-drop by given name
+- Get SigmaOS-drag-drop status and SigmaOS-drag-drop availability
+- Track SigmaOS-drag-drop management and SigmaOS-drag-drop tracking
 - Error types for SigmaOS-drag-drop failure scenarios or unsupported SigmaOS-drag-drop types
 
 ## Test Structure (Arrange-Act-ASSERT)
@@ -32,11 +32,8 @@ All tests follow the AAA pattern:
 2. **Act**: Execute the code under test (SigmaOS-drag-drop init, SigmaOS-drag-drop management)
 3. **Assert**: Verify the expected SigmaOS-drag-drop results
 
-Example:
-
-
 ## Development
-- Follows Rust best practices with 
+- Follows best practices with clear abstraction boundaries
 - SigmaOS-drag-drop initialization is best-effort; gracefully degrades on unsupported configurations
 - Comprehensive error types for all SigmaOS-drag-drop failure scenarios
 - Unit tests provided for SigmaOS-drag-drop management and configuration
